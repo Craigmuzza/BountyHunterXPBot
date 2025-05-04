@@ -252,4 +252,14 @@ client.once('ready', () => {
   console.log(`✅ Logged in as ${client.user.tag}`);
 });
 
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN).then(() => {
+  // Minimal HTTP server so Render sees an open port
+  const http = require('http');
+  const PORT = process.env.PORT || 3000;
+  http.createServer((req, res) => {
+    res.writeHead(200);
+    res.end('OK');
+  }).listen(PORT, () => {
+    console.log(`🌐 HTTP server listening on port ${PORT}`);
+  });
+});
