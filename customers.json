@@ -1,0 +1,20 @@
+{
+  "customers": {
+    "188036658120097802": {
+      "id": "188036658120097802",
+      "tag": "craigmuzza#0",
+      "totalGp": 1300000000,
+      "totalUsdCents": 15500,
+      "totalPoints": 4250,
+      "lastUpdated": 1755117673803
+    },
+    "977540594027102248": {
+      "id": "977540594027102248",
+      "tag": ".j0rdyyy#0",
+      "totalGp": 2000000000,
+      "totalUsdCents": 40000,
+      "totalPoints": 2800,
+      "lastUpdated": 1755173174751
+    }
+  }
+}
